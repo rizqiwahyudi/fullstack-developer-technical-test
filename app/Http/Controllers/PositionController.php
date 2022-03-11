@@ -14,7 +14,13 @@ class PositionController extends Controller
      */
     public function index()
     {
-        //
+        if(request()->ajax()) {
+            $positions = Position::all();
+            return datatables($positions)
+                ->addIndexColumn()
+                ->toJson();
+        }
+        return view('position');
     }
 
     /**

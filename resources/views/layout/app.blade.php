@@ -23,7 +23,7 @@
         @include('layout.topbar')
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
-          @include('layout.breadcrumb')
+          @yield('breadcrumb')
           @yield('content')
           <!-- Modal Logout -->
           <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
@@ -62,8 +62,6 @@
   <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
   <script src="{{ asset('js/ruang-admin.min.js') }}"></script>
-  <script src="{{ asset('vendor/chart.js/Chart.min.js') }}"></script>
-  <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
   @stack('js')
 </body>
 </html>
