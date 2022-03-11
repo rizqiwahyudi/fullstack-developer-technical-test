@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-<div class="row mb-3">
+{{-- <div class="row mb-3">
     <!-- Earnings (Monthly) Card Example -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card h-100">
@@ -285,6 +285,6 @@
         </div>
       </div>
     </div>
-</div>
+</div> --}}
   <!--Row-->
 @endsection
